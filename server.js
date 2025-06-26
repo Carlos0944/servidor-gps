@@ -1,6 +1,10 @@
 const net = require('net');
 const admin = require('firebase-admin');
-const serviceAccount = require('./firebase-key.json'); // Cambia por el nombre real de tu archivo JSON
+const admin = require("firebase-admin");
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
+
+
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
