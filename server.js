@@ -65,5 +65,5 @@ function convertirLongitud(coord, dir) {
 }
 
 server.listen(5000, () => {
-  console.log('Servidor TCP escuchando en puerto 5000');
+  console.log('Servidor TCP escuchando en puerto 5050');
 });
