@@ -64,6 +64,6 @@ function convertirLongitud(coord, dir) {
   return dir === 'W' ? -decimal : decimal;
 }
 
-server.listen(5000, () => {
+server.listen(5050, () => {
   console.log('Servidor TCP escuchando en puerto 5050');
 });
